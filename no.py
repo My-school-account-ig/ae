@@ -13,6 +13,37 @@ time.sleep(1)
 
 inventory = []
 
+def house_landing():
+    print("house_landing() subroutine has been activated")
+    print("you have entered the landing")
+    print("""only 1 of 4 rooms will help you escape
+1) turn back
+2) bedroom 2
+3) bedroom 3
+4) bathroom
+5) go downstairs
+6) inventory (does not progress the game)""")
+    choice = input(int(""))
+    if choice == "1":
+        print("You have died, please restart the game (there is no saving lol)")
+    elif choice == "2":
+        print("You have died, please restart the game (there is no saving lol)")
+    elif choice == "3":
+        print("You have died, please restart the game (there is no saving lol)")
+    elif choice == "4":
+        print("You have died, please restart the game (there is no saving lol)")
+    elif choice == "5":
+        warnings.warn("no subroutine", stacklevel=2)
+        sys.stderr.write("program has been terminated")
+    elif choice == "6":
+        warnings.warn("this will repeat the subroutine", stacklevel=2)
+        print("inventory: ", inventory)
+        house_landing()
+    else:
+        warnings.warn("please input a valid integer", stacklevel=2)
+        warnings.warn("this will repeat the subroutine", stacklevel=2)
+        house_landing()
+
 def house_bedroom():
     print("house_bedroom() subroutine is activated")
     print("You need to leave and escape.")
@@ -22,8 +53,7 @@ def house_bedroom():
 3) inventory (does not progress the game)""")
     choice = input(int())
     if choice == "1":
-        warnings.warn("no subroutine", stacklevel=2)
-        sys.stderr.write("program has terminated")
+        house_landing()
     elif choice == "2":
         warnings.warn("this will repeat the subroutine", stacklevel=2)
         inventory.append("phone")
