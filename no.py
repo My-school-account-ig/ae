@@ -16,6 +16,51 @@ x = int(random.randint(1, 3))
 
 inventory = []
 
+def m4_b():
+    print("m4_b() subroutine has been activated")
+    print("a")
+    print("""where do you want to go?
+    1) back to newport
+    2) go to llanfairpwllgwyngyllgogerychwryndrobwllllantysiliogogogoch
+    3) check inventory""")
+    choice = input(int(""))
+    if choice == "1":
+        newport()
+    elif choice == "2":
+        warnings.warn("this subroutine does not exist", stacklevel=2)
+        sys.stderr.write("program has been terminated")
+    elif choice == "3":
+        warnings.warn("this will loop the subroutine", stacklevel=2)
+        print("inventory: ", inventory)
+        m4_b()
+    else:
+        warnings.warn("this will loop the subroutine", stacklevel=2)
+        warnings.warn("please input a valid integer", stacklevel=2)
+        m4_b()
+
+def cardiff():
+    print("cardiff() subroutine has been activated")
+    print("you have arrived at cardiff")
+    print("""what do you want to do?
+    1) get supplies
+    2) go back on the m4
+    3) check inventory""")
+    choice = input(int(""))
+    if choice == "1":
+        warnings.warn("this will loop the subroutine", stacklevel=2)
+        print("you got some supplies")
+        cardiff()
+    elif choice == "2":
+        m4_b()
+    elif choice == "3":
+        warnings.warn("this will loop the subroutine", stacklevel=2)
+        print("inventory: ", inventory)
+        cardiff()
+    else:
+        warnings.warn("this will loop the subroutine", stacklevel=2)
+        warnigns.warn("please input a valid integer", stacklevel=2)
+        cardiff()
+
 def m4_a():
     print("m4_a() subroutine has been activated")
     print("you are on the m4")
@@ -25,8 +70,7 @@ def m4_a():
 3) check inventory""")
     choice = input(int(""))
     if choice == "1":
-        warnings.warn("this subroutine does not exist", stacklevel=2)
-        sys.stderr.write("program has been terminated")
+        cardiff()
     elif choice == "2":
         warnings.warn("this subroutine does not exist", stacklevel=2)
         sys.stderr.write("program has been terminated")
@@ -260,3 +304,4 @@ print("ono zombie caine aaaaaaa zombie aaaaaaaaaaaaaaaa - said co-caine")
 print("dgsafagrwigfrwuvfebvgiubjsbvv\bxzbv - says the zombie")
 print("ono the zombie has zombied the zombie and is going to zombie our zombie runnn! - said co-caine")
 house()
+
