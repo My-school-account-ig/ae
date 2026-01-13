@@ -16,6 +16,31 @@ x = int(random.randint(1, 3))
 
 inventory = []
 
+def road_to_llanfairpwllgwyngyllgogerychwyrndrobwllllantysiliogogogoch():
+    print("road_to_llanfairpwlldwyngyllgogerychwyrndrobwllllantysiliogogogoch() subroutine has been activated")
+    print("holy thats a long subroutine name")
+    print("you are on the road to llanfairpwllgwyngyllgogerychwyrndrobwllllantysiliogogogoch")
+    print("""where do you want to go?
+    1) keep going
+    2) loot services
+    3) check inventory""")
+    choice = input(int(""))
+    if choice == "1":
+        warnings.warn("this subroutine doesn't exist", stacklevel=2)
+        sys.stderr.write("program has been terminated")
+    elif choice == "2":
+        warnings.warn("this will loop the subroutine", stacklevel=2)
+        print("you loot the services and got supplies")
+        road_to_llanfairpwllgwyngyllgogerychwyrndrobwllllantysiliogogogoch()
+    elif choice == "3":
+        warnings.warn("this will loop the subroutine", stacklevel=2)
+        print("inventory: ", inventory)
+        road_to_llanfairpwllgwyngyllgogerychrwyndrobwllllantysiliogogogoch()
+    else:
+        warnings.warn("this will loop the subroutine", stacklevel=2)
+        warnings.warn("please input a valid integer", stacklevel=2)
+        road_to_llanfairpwllgwyngyllgogerychrwyndrobwllllantysiliogogogoch()
+
 def m4_b():
     print("m4_b() subroutine has been activated")
     print("a")
@@ -27,8 +52,7 @@ def m4_b():
     if choice == "1":
         newport()
     elif choice == "2":
-        warnings.warn("this subroutine does not exist", stacklevel=2)
-        sys.stderr.write("program has been terminated")
+        road_to_llanfairpwllgwyngyllgogerychwyrndrobwllllantysiliogogogoch()
     elif choice == "3":
         warnings.warn("this will loop the subroutine", stacklevel=2)
         print("inventory: ", inventory)
@@ -72,8 +96,7 @@ def m4_a():
     if choice == "1":
         cardiff()
     elif choice == "2":
-        warnings.warn("this subroutine does not exist", stacklevel=2)
-        sys.stderr.write("program has been terminated")
+        road_to_llanfairpwllgwyngyllgogerychwyrndrobwllllantysiliogogogoch()
     elif choice == "3":
         warnings.warn("this will loop the subroutine", stacklevel=2)
         print("inventory: ", inventory)
@@ -304,4 +327,5 @@ print("ono zombie caine aaaaaaa zombie aaaaaaaaaaaaaaaa - said co-caine")
 print("dgsafagrwigfrwuvfebvgiubjsbvv\bxzbv - says the zombie")
 print("ono the zombie has zombied the zombie and is going to zombie our zombie runnn! - said co-caine")
 house()
+
 
