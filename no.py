@@ -3,15 +3,9 @@ import time
 import logging
 import warnings
 import random
-sys.stderr.write("err: import time is unused\n")
 sys.stderr.write("err: import logging is unused\n")
 sys.stderr.write("THERE IS AN ERROR ON LINE 55\n")
 sys.stderr.write("there is no number c on line 38\n")
-
-print("This part of the game is old and outdated, it won't be updated and debug mode is always on. soz! - the creator :3")
-time.sleep(1)
-print("If you want the updated version of the game, please download the latest version of the game on github (look at releases, it should be at the top, this will be at the bottom) - the (femboy) creator :3")
-time.sleep(1)
 
 x = int(random.randint(1, 3))
 
@@ -23,7 +17,7 @@ def holyhead():
     print("holyhead() subroutine has been activated")
     choice = 0
     print("you have arrived at holyhead and got some supplies")
-    sleep(5)
+    time.sleep(5)
     print("""what do you want to do?
 1. look for more supplies
 2. go back to llanfairpwllgwyngyllgogerychwyrndrobwllllantysiliogogogoch
@@ -48,7 +42,7 @@ def llanfairpwllgwyngyllgogerychwyrndrobwllllantysiliogogogoch():
     print("llanfairpwllgwyngyllgogerychwyrndrobwllllantysiliogogogoch() subroutine has been activated")
     choice = 0
     print("you have reached llanfairpwllgwyngyllgogerychrywndrobwllllantysiliogogogoch after hours of driving")
-    sleep(5)
+    time.sleep(5)
     print("""what do you want to do?
 1) get some rest
 2) go get some more supplies from holyhead
@@ -99,7 +93,7 @@ def m4_b():
     print("m4_b() subroutine has been activated")
     choice = 0
     print("a")
-    sleep(5)
+    time.sleep(5)
     print("""where do you want to go?
     1) back to newport
     2) go to llanfairpwllgwyngyllgogerychwryndrobwllllantysiliogogogoch
@@ -122,7 +116,7 @@ def cardiff():
     print("cardiff() subroutine has been activated")
     choice = 0
     print("you have arrived at cardiff")
-    sleep(5)
+    time.sleep(5)
     print("""what do you want to do?
     1) get supplies
     2) go back on the m4
@@ -147,7 +141,7 @@ def m4_a():
     print("m4_a() subroutine has been activated")
     choice = 0
     print("you are on the m4")
-    sleep(5)
+    time.sleep(5)
     print("""where do you want to go?
 1) go to cardiff
 2) go to Llanfairpwllgwyngyllgogerychrwyndrobwllllantysiliogogoch
@@ -170,7 +164,7 @@ def newport():
     print("newport() subroutine has been activated")
     choice = 0
     print("you can skip this if you want lol")
-    sleep(5)
+    time.sleep(5)
     print("""what do you want to do?
 1) go get supplies
 2) go on the M4
@@ -214,7 +208,7 @@ def house_kitchen_cupboards():
     print("house_kitchen_cupboards() subroutine has been activated")
     choice = 0
     print("you go to check the cupboards")
-    sleep(5)
+    time.sleep(5)
     print("""check cupboard:
 1) cupboard 1
 2) cupboard 2
@@ -273,7 +267,7 @@ def house_kitchen():
     print("house_kitchen() subroutine has been activated")
     choice = 0
     print("you went into the kitchen")
-    sleep(5)
+    time.sleep(5)
     print("""what do you want to do?
 1) fight zombie
 2) look in the cupboards
@@ -304,7 +298,7 @@ def house_hallway():
     print("house_hallway() subroutine has been activated")
     choice = 0
     print("you entered the hallway")
-    sleep(1)
+    time.sleep(1)
     print("""what do you want to do?
 1) go to the kitchen
 2) go outside
@@ -333,7 +327,7 @@ def house_landing():
     print("house_landing() subroutine has been activated")
     choice = 0
     print("you have entered the landing")
-    sleep(5)
+    time.sleep(5)
     print("""only 1 of 4 rooms will help you escape
 1) turn back
 2) bedroom 2
@@ -364,7 +358,7 @@ def house_landing():
 def house_bedroom():
     print("house_bedroom() subroutine is activated")
     print("You need to leave and escape.")
-    sleep(5)
+    time.sleep(5)
     print("""What do you want to do?
 1) leave the bedroom
 2) grab your phone
@@ -388,21 +382,21 @@ def house_bedroom():
 def house():
     print("house() subroutine is activated")
     print("this is the house where your're lives")
-    sleep(5)
+    time.sleep(5)
     print("tiem to leave teh hose :3")
     house_bedroom()
 
 name = print("What's your're name?")
-sleep(5)
+time.sleep(5)
 sys.stderr.write("err: unused variable name\n")
 print("sike your're name is caine >:3")
-sleep(1)
+time.sleep(1)
 print(";w;")
-sleep(5)
+time.sleep(5)
 print("ono zombie caine aaaaaaa zombie aaaaaaaaaaaaaaaa - said co-caine")
-sleep(1)
+time.sleep(1)
 print("dgsafagrwigfrwuvfebvgiubjsbvv\bxzbv - says the zombie")
-sleep(1)
+time.sleep(1)
 print("ono the zombie has zombied the zombie and is going to zombie our zombie runnn! - said co-caine")
 house()
 
