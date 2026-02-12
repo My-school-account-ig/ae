@@ -7,6 +7,11 @@ sys.stderr.write("err: import logging is unused\n")
 sys.stderr.write("THERE IS AN ERROR ON LINE 55\n")
 sys.stderr.write("there is no number c on line 38\n")
 
+print("This part of the game is old and outdated, it won't be updated and debug mode is always on. soz! - the creator :3")
+time.sleep(1)
+print("If you want the updated version of the game, please download the latest version of the game on github (look at releases, it should be at the top, this will be at the bottom) - the (femboy) creator :3")
+time.sleep(1)
+
 x = int(random.randint(1, 3))
 
 knife = 0
@@ -399,4 +404,5 @@ print("dgsafagrwigfrwuvfebvgiubjsbvv\bxzbv - says the zombie")
 time.sleep(1)
 print("ono the zombie has zombied the zombie and is going to zombie our zombie runnn! - said co-caine")
 house()
+
 
