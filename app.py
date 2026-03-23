@@ -1,6 +1,6 @@
 import tkinter as tk
 
-root = tx.Tk*()
+root = tk.Tk()
 
 root.title("storm chasing  gaem thinf :3")
 root.configure(background="black")
