@@ -1,19 +1,13 @@
-from tkinter import*
 import tkinter as tk
 
-root = Tk()
+root = tx.Tk*()
 
-class GUI(Canvas):
-    '''inherits Canvas class (all Canvas methodes, attributes will be accessible)
-       You can add your customized methods here.
-    '''
-    def __init__(self,master,*args,**kwargs):
-        Canvas.__init__(self, master=master, *args, **kwargs)
-
-tk.Label(root, text="test").pack()
+root.title("storm chasing  gaem thinf :3")
 root.configure(background="black")
+root.minwidth(500, 500)
+root.maxwidth(1920, 1080)
 
-polygon = GUI(root)
-polygon.create_polygon([0, 0, 100, 0, 100, 100, 0, 100], outline="Yellow", width=2)
-polygon.pack()
+canvas = Canvas(root)
+canvas.create_polygon(10, 10, 200, 50, 90, 150, 50, 80, 120, 55, outline="blue", width=2)
+
 root.mainloop()
